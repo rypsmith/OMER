@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "ca.ontariomathedresources.omer"
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>OMER</name>
+
+    <description>
+        Ontario Math Education Resources
+    </description>
+	<preference name="fullscreen" value="true" />
+	<preference name="permissions" value="none" />
+	<preference name="SplashScreen" value="splash" />
+	
+ 	<icon src="icon.png" />
+	
+	<!-- Android -->
+	<gap:splash src="portrait-ldpi.png" gap:platform="android" gap:qualifier="port-ldpi" />
+	<gap:splash src="portrait-mdpi.png" gap:platform="android" gap:qualifier="port-mdpi" />
+	<gap:splash src="portrait-hdpi.png" gap:platform="android" gap:qualifier="port-hdpi" />
+	<gap:splash src="portrait-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+	
+	<gap:splash src="landscape-ldpi.png" gap:platform="android" gap:qualifier="land-ldpi" />
+	<gap:splash src="landscape-mdpi.png" gap:platform="android" gap:qualifier="land-mdpi" />
+	<gap:splash src="landscape-hdpi.png" gap:platform="android" gap:qualifier="land-hdpi" />
+	<gap:splash src="landscape-xhdpi.png" gap:platform="android" gap:qualifier="land-xhdpi" />
+	
+	<!-- iPhone and iPod touch -->
+	<gap:splash src="Default.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="Default@2x.png" gap:platform="ios" width="640" height="960" />
+
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<gap:splash src="Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+
+	<!-- iPad -->
+	<gap:splash src="Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+	<gap:splash src="Default-Landscape.png" gap:platform="ios" width="1024" height="768" />
+
+	<!-- Retina iPad -->
+	<gap:splash src="Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+	<gap:splash src="Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
+	
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="com.adobe.plugins.gaplugin" />
+	
+	<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+	</feature>
+	
+	<feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+	</feature>
+	
+	<feature name="GAPlugin" >
+    <param name="android-package" value="com.adobe.plugins.GAPlugin"/>
+	</feature>
+	
+	
+
+</widget>
